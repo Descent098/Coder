@@ -12,7 +12,7 @@
         }
     </style>
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body style="height:250vh">
@@ -85,26 +85,39 @@
 </body>
 
 <!--Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 
 <!-- Import Editor js-->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script src="js/editor/editorjs.js"></script>
 
 <!--Additional Tools-->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script><!-- Header -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest"></script><!-- Delimiter -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script><!-- List -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/checklist@latest"></script><!-- Checklist -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script><!-- Quote -->
-<script src="https://cdn.jsdelivr.net/gh/paraswaykole/editor-js-code@latest/dist/bundle.js"></script><!-- Code -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/embed@latest"></script><!-- Embed -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script><!-- Table -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/link@latest"></script><!-- Link -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/marker@latest"></script><!-- Marker -->
-<script src="https://cdn.jsdelivr.net/npm/@editorjs/inline-code@latest"></script><!-- Inline Code -->
+    <!-- Header -->
+    <script src="js/editor/header.js"></script>
+    <!-- Delimiter -->
+    <script src="js/editor/delimiter.js"></script>
+    <!-- List -->
+    <script src="js/editor/list.js"></script>
+    <!-- Checklist -->
+    <script src="js/editor/checklist.js"></script>
+    <!-- Quote -->
+    <script src="js/editor/quote.js"></script>
+    <!-- Code -->
+    <script src="js/editor/code.js"></script>
+    <!-- Embed -->
+    <script src="js/editor/embed.js"></script>
+    <!-- Table -->
+    <script src="js/editor/table.js"></script>
+    <!-- Link -->
+    <script src="js/editor/link.js"></script>
+    <!-- Marker -->
+    <script src="js/editor/marker.js"></script>
+    <!-- Inline Code -->
+    <script src="js/editor/inline-code.js"></script>
+    <!-- Raw -->
+    <script src="js/editor/raw.js"></script>
 <!-- File saving-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js" integrity="sha256-FPJJt8nA+xL4RU6/gsriA8p8xAeLGatoyTjldvQKGdE=" crossorigin="anonymous"></script>
+<script src="js/FileSaver.min.js" integrity="sha256-FPJJt8nA+xL4RU6/gsriA8p8xAeLGatoyTjldvQKGdE=" crossorigin="anonymous"></script>
 
 
 <script>
@@ -118,7 +131,7 @@
          */ 
         tools: { 
             heading: Header, 
-            list: List,
+            list: EditorjsList,
             code:CodeTool,
             table: Table,
             marker:Marker,
